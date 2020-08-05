@@ -1,0 +1,8 @@
+# IntelliJ project files
+.idea
+*.iml
+
+# env-Files
+# you should uncomment this! we are only commiting the env-files for demonstration purposes
+#*.envrc
+#*.env
