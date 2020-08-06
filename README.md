@@ -58,10 +58,12 @@ via your shell, and the app can directly use the environment variables. You do n
 any library-call in the bootstrapping of your app.
 
 This also means that `direnv` is totally
-language/framework agnostic and can be used for a broader area of use cases. For example, it is
-very helpful when working with Infrastructure-As-Code. Or it can be used when developing/testing
-GitLab-pipelines locally that use environment variables defined as
+language/framework agnostic and can be used for a broader area of use cases, for example:
+* when working with Infrastructure-As-Code
+* developing/testing GitLab-pipelines locally that use environment variables defined as
 [GitLab CI/CD environment variables](https://docs.gitlab.com/ee/ci/variables/)!
+* set your `AWS_PROFILE` on a per-project basis
+* ...
 
 ## using direnv and dotenv at the same time
 
