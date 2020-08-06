@@ -80,6 +80,18 @@ dotenv
 (https://direnv.net/man/direnv-stdlib.1.html) and does exactly what you suspect: it loads
 a `.env`-File. We still need two files instead of one, but it works :)
 
+## general remarks
+
+* env-files should never be committed to version control since they contain credentials etc.!
+So make sure to put them in your `.gitignore`:
+    ```shell script
+    *.envrc
+    *.env
+    ```
+    * to make it easier to get started for new developers, you however can create a `.env.template`
+    file that documents all possible environment variables (with empty values) 
+* do not use multiple `.env` files like `.env.production`, `.env.staging` etc. This approach does
+not scale well, config should not be shared between multiple environments (see: http://12factor.net/config)
 
 ## Integration tips
 
